@@ -11,7 +11,7 @@ using Persistence;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20221006015518_CreatePostsTable")]
+    [Migration("20221012003152_CreatePostsTable")]
     partial class CreatePostsTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
