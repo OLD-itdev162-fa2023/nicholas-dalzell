@@ -10,9 +10,7 @@ namespace Persistence
     {
         public static void SeedData(DataContext context)
         {
-            if (!context.Posts.Any()) 
-            {
-                var Posts = new List<Post>
+            var Posts = new List<Post>
                 {
                     new Post {
                         Title = "First Post",
@@ -33,7 +31,6 @@ namespace Persistence
 
                 context.Posts.AddRange(Posts);
                 context.SaveChanges();
-            }
         }
     }
 }
