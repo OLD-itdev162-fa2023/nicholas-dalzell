@@ -10,7 +10,9 @@ namespace Persistence
     {
         public static void SeedData(DataContext context)
         {
-            var Posts = new List<Post>
+            if (!context.Posts.Any())
+            {
+                var Posts = new List<Post>
                 {
                     new Post {
                         Title = "First Post",
@@ -26,11 +28,12 @@ namespace Persistence
                         Title = "Third Post",
                         Body = "adfkjbadfjkab",
                         Date = DateTime.Now.AddDays(-4)
-                        }
+                        },
                 };
 
                 context.Posts.AddRange(Posts);
                 context.SaveChanges();
-        }
+            }
+        }            
     }
 }
