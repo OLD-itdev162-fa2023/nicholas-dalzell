@@ -10,11 +10,11 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class PostController : ControllerBase
+    public class PostsController : ControllerBase
     {
         private readonly DataContext context;
 
-        public PostController(DataContext context)
+        public PostsController(DataContext context)
         {
             this.context = context;
         }

@@ -16,19 +16,19 @@ namespace Persistence
                 {
                     new Post {
                         Title = "First Post",
-                        Body = "",
+                        Body = "asdgaskjdbgadba,",
                         Date = DateTime.Now.AddDays(-10)
-                    },
+                        },
                     new Post {
                         Title = "Second Post",
-                        Body = "",
+                        Body = "erilughekfjbvadfjk",
                         Date = DateTime.Now.AddDays(-7)
-                    },
+                        },
                     new Post {
                         Title = "Third Post",
-                        Body = "",
+                        Body = "adfkjbadfjkab",
                         Date = DateTime.Now.AddDays(-4)
-                    }
+                        }
                 };
 
                 context.Posts.AddRange(Posts);
