@@ -10,9 +10,11 @@ export class AppComponent implements OnInit {
   title = 'client';
   posts: any;
 
+  
   constructor(private http: HttpClient) {
 
   }
+
   ngOnInit(): void {
     this.http.get('http://localhost:5034/api/posts').subscribe(
       response =>{this.posts = response; },
