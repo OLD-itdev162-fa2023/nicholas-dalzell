@@ -11,12 +11,12 @@ namespace Persistence.Migrations
         {
             migrationBuilder.CreateTable(
                 name: "Posts",
-                columns: table => new
+                columns: table => new 
                 {
-                    Id = table.Column<Guid>(type: "TEXT", nullable: false),
-                    Title = table.Column<string>(type: "TEXT", nullable: false),
-                    Body = table.Column<string>(type: "TEXT", nullable: false),
-                    Date = table.Column<DateTime>(type: "TEXT", nullable: false)
+                    Id = table.Column<Guid>(type: "TEXT", nullable:false),
+                    Title = table.Column<string>(type: "TEXT", nullable:false),
+                    Body = table.Column<string>(type: "TEXT", nullable:false),
+                    Date = table.Column<DateTime>(type: "TEXT", nullable:false)
                 },
                 constraints: table =>
                 {
