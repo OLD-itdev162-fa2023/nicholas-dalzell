@@ -19,6 +19,10 @@ namespace API.Controllers
             this.context = context;
         }
 
+        /// <summary>
+        /// GET api/posts
+        /// </summary>
+        /// <returns>A list of posts</returns>
         [HttpGet(Name = "GetPosts")]
         public ActionResult<List<Post>> Get()
         {
